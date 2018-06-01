@@ -76,7 +76,13 @@
                                     ],
                                     "Resource": "*"
                                 },
-                                
+                                {
+                                    "Effect": "Deny",
+                                    "Action": [
+                                        "lambda:*"
+                                    ],
+                                    "Resource":"arn:aws:lambda:*:*:stack/gov-*"
+                                },                                
                                 {
                                     "Effect": "Deny",
                                     "Action": [
